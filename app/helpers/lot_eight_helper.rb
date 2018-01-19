@@ -1,0 +1,2 @@
+module LotEightHelper
+end
