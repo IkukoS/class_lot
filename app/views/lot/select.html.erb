@@ -7,7 +7,7 @@
 <div class="container"><div class="row">
 	
 	<table class="table table-bordered">
-		<tr><th>立候補者</th><th>抽選結果</th></tr>
+		<tr><th class="col-sm-1">立候補者</th><th class="col-sm-2">抽選結果</th></tr>
 		<tr>
 			<td>
 				<ol>
@@ -16,9 +16,8 @@
 				<% end %>
 				</ol>
 			</td>
-			<td class="bg-info">
-
-				<ol>
+			<td>
+				<ol class="hidden" id="result">
 				<% @selected.each do |person| %>
 				<li><%= person %></li>
 				<% end %>
@@ -30,6 +29,6 @@
 </container>
 
 
-<h3><%= link_to '再選出', 'http://localhost:3000/lot/select' %></h3>
+<h3><%= link_to '選出/再選出', 'http://localhost:3000/lot/select?showResult=true', method: :get%></h3>
 <h3><%= link_to 'HOME', 'http://localhost:3000/index' %></h3>
 

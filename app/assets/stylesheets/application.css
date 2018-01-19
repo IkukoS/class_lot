@@ -12,3 +12,9 @@ body {
     background-image: none;
     background-color: #ccf9e4;
 }
+
+.hidden {
+	visibility: false;
+}
+
+
