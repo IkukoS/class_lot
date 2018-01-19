@@ -1,4 +1,23 @@
-<h1><%= @title %></h1>
-<h2><%= link_to '新4年生', 'lot/select_ready' %></h2>
-<h2><%= link_to '新中学2年生', 'lot_eight/select_ready' %></h2>
+
+<div class="panel panel-default">
+  <div class="panel-heading" >
+	  <h1><%= @title %></h1>
+  </div>
+</div>
+
+<div class="container">
+
+<table class="table table-bordered">
+	<tr><th>学年</th><th>定員</th><th>応募者数</th><th>抽選</th></tr>
+	<% @volunteer_data.each do |volunteer| %>
+		<tr><td><%= volunteer['title'] %></td><td><%=volunteer['teiin'] %></td><td><%= volunteer['current'] %></td><td>
+        <% if volunteer['link'] != "" %>
+			<%=link_to '抽選を行う', volunteer['link'] %>
+		<% end %>
+		</td></tr>
+	<% end %>
+</table>
+<p class='text-right'>最終アップデート：<%= @time_of_update %></p>
+</div>
+
 
