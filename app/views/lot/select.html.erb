@@ -10,14 +10,19 @@
 		<tr><th>立候補者</th><th>抽選結果</th></tr>
 		<tr>
 			<td>
+				<ol>
 				<% @candidates.each do |candidate| %>
-				<%= candidate %></br>
+				<li><%= candidate %></li>
 				<% end %>
+				</ol>
 			</td>
 			<td class="bg-info">
+
+				<ol>
 				<% @selected.each do |person| %>
-				<%= person %></br>
+				<li><%= person %></li>
 				<% end %>
+				</ol>
 			</td>
 		</tr>
 	</table>	
