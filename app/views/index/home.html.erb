@@ -1,4 +1,29 @@
-<h1><%= @title %></h1>
-<h2><%= link_to '新4年生', 'lot/select_ready' %></h2>
-<h2><%= link_to '新中学2年生', 'lot_eight/select_ready' %></h2>
+
+<div class="panel panel-default">
+  <div class="panel-heading" >
+	  <h1><%= @title %></h1>
+  </div>
+</div>
+
+<div class="container">
+
+<table class="table table-bordered">
+	<tr><th>学年</th><th>定員</th><th>応募者数</th><th>抽選</th></tr>
+	<tr><td><%= @shurui[0] %></td><td><%= @teiin[0] %></td><td><%= @oubo[0] %></td><td></td></tr>
+	<tr><td><%= @shurui[1] %></td><td><%= @teiin[1] %></td><td><%= @oubo[1] %></td><td></td></tr>
+	<tr><td><%= @shurui[2] %></td><td><%= @teiin[2] %></td><td><%= @oubo[2] %></td><td></td></tr>
+	<tr><td><%= @shurui[3] %></td><td><%= @teiin[3] %></td><td><%= @oubo[3] %></td><td><a href='lot/select'>抽選を行う<a></td></tr>
+	<tr><td><%= @shurui[4] %></td><td><%= @teiin[4] %></td><td><%= @oubo[4] %></td><td></td></tr>
+	<tr><td><%= @shurui[5] %></td><td><%= @teiin[5] %></td><td><%= @oubo[5] %></td><td></td></tr>
+	<tr><td><%= @shurui[6] %></td><td><%= @teiin[6] %></td><td><%= @oubo[6] %></td><td></td></tr>
+	<tr><td><%= @shurui[7] %></td><td><%= @teiin[7] %></td><td><%= @oubo[7] %></td><td></td></tr>
+	<tr><td><%= @shurui[8] %></td><td><%= @teiin[8] %></td><td><%= @oubo[8] %></td><td></td></tr>
+	<tr><td><%= @shurui[9] %></td><td><%= @teiin[9] %></td><td><%= @oubo[9] %></td><td></td></tr>
+	<tr><td><%= @shurui[10] %></td><td><%= @teiin[10] %></td><td><%= @oubo[10] %></td><td></td></tr>
+	<tr><td><%= @shurui[11] %></td><td><%= @teiin[11] %></td><td><%= @oubo[11] %></td><td></td></tr>
+	<tr><td><%= @shurui[12] %></td><td><%= @teiin[12] %></td><td><%= @oubo[12] %></td><td></td></tr>
+</table>
+<p class='text-right'>最終アップデート：<%= @time_of_update %></p>
+</div>
+
 

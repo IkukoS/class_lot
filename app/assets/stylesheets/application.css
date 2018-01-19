@@ -1,5 +1,14 @@
 body {
-	background-color :#ccf9e4;
-	text-align: center;
+	text-align: left;
 }
 
+/* style.css */
+* {
+   font-size: 18px;
+   line-height: 2;
+}
+
+.panel-default > .panel-heading {
+    background-image: none;
+    background-color: #ccf9e4;
+}

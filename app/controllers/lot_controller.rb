@@ -2,7 +2,9 @@ class LotController < ApplicationController
 
 	def select
 		@name = "新4年生暫定クラス委員"
-		@original_grade4 = ["Tomo", "Chie", "Ikko", "Eri", "Kumi","Aki", "Chihiro", "Yumi", "Fumi", "Aya"]
+		@original_grade4 = ["Tomo", "Chie", "Ikko", "Eri", "Kumi","Aki", "Chihiro", "Yumi", "Fumi", "Aya"]		
+    @candidates = @original_grade4.clone
+
 		@selected = []
 		current_number = 0
     	while current_number < 8
